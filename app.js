@@ -1,5 +1,5 @@
 // Set this to your deployed Google Apps Script Web App URL ending in /exec.
-const API_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+const API_URL = 'https://script.google.com/macros/s/AKfycbwiy0_O86pNjEawvKwbQ7CRKSI_7_SPipkIobRDwpyX2U95n-IeTyUGSYJgP7ywq6Fr/exec';
 function api(action, options={}) {
   return new Promise((resolve,reject)=>{
     if(!API_URL.startsWith('https://script.google.com/')) return reject(new Error('Set API_URL in app.js to your deployed Apps Script /exec URL first.'));
